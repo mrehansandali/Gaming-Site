@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="logo.png" class="logo" alt="">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="#">Game Controller</a></li>
+                    <li><a href="#">VR Accessories</a></li>
+                    <li><a href="#">Media Remote</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </nav>
+            <img src="menu.png" class="menu" alt="" onclick="toggleMenu()">
+        </div>
+
+        <div class="row">
+            <div class="col1">
+                <h2>PS4 V2<br>Dual Shock 4</h2>
+                <h3>Wireless Controller for Play Station 4</h3>
+                <p>(Compatible/Generic)</p>
+                <h4>PKR 32000</h4>
+                <button type="button">Buy Now<img src="arrow.png"></button>
+            </div>
+            <div class="col2">
+                <img class="joystick" src="joystick.png" alt="">
+                <div class="colorBox"></div>
+                <div class="addButton">
+                    <img src="add.ico" alt="">
+                    <p><small>Add To Cart</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="socialLinks">
+            <img src="fb.jpg" alt="">
+            <img src="ins.webp" alt="">
+            <img src="utube.png" alt="">
+        </div>
+    </div>
+
+
+
+</body>
+
+<script>
+
+
+    var menuList = document.getElementById("menuList");
+    menuList.style.maxHeight = "0px";
+
+    function toggleMenu() {
+        if (menuList.style.maxHeight == "0px") {
+            menuList.style.maxHeight = "130px";
+        }
+        else {
+            menuList.style.maxHeight = "0px";
+        }
+    }
+
+</script>
+
+</html>
